@@ -149,7 +149,7 @@ export default function HomeExplore() {
           className="text-[3.5vw] max-md:text-[7vw] text-center font-bold font-['Secondary'] leading-[4vw] max-md:leading-[8vw]"
         />
         <Button
-          navigate={"/explore"}
+          navigate={"/collection"}
           className="bg-white/10 border-white/15 rounded-sm text-white p-3 text-xl rotate-x-180"
         >
           <BsArrow90DegRight />
