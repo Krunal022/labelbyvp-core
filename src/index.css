@@ -1,0 +1,98 @@
+ @import "tailwindcss";
+
+ ::-webkit-scrollbar {
+   display: none;
+ }
+
+ .transform-style-3d {
+   transform-style: preserve-3d;
+ }
+
+ .rotate-x-90 {
+   transform: rotateX(90deg);
+ }
+
+ .face {
+   backface-visibility: hidden;
+ }
+
+ .front {
+   transform: translateZ(42px);
+   /* half the cube's height */
+ }
+
+ .bottom {
+   transform: rotateX(-90deg) translateZ(42px);
+ }
+
+ @font-face {
+   font-family: 'Primary';
+   src: url('/Neue.woff2') format('woff2');
+ }
+
+ @font-face {
+   font-family: 'Secondary';
+   src: url('/NeueKabel.otf') format('opentype');
+ }
+
+ @font-face {
+   font-family: 'Decorative';
+   src: url('/Noir-Regular.woff2') format('woff2');
+ }
+
+ h1 {
+   font-family: 'Secondary';
+ }
+
+ h2,
+ h3 {
+   font-family: 'Primary';
+ }
+
+ .equalizer {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   gap: 2px;
+   height: 20px;
+   width: 50px;
+ }
+
+ .bar {
+   width: 2px;
+   background-color: #0A8296;
+   /* green-400 */
+   animation: bounceHeight 1s infinite ease-in-out;
+ }
+
+ .bar:nth-child(1) {
+   animation-delay: 0s;
+ }
+
+ .bar:nth-child(2) {
+   animation-delay: 0.2s;
+ }
+
+ .bar:nth-child(3) {
+   animation-delay: 0.4s;
+ }
+
+ .bar:nth-child(4) {
+   animation-delay: 0.6s;
+ }
+
+ .bar:nth-child(5) {
+   animation-delay: 0.8s;
+ }
+
+ @keyframes bounceHeight {
+
+   0%,
+   100% {
+     height: 20%;
+   }
+
+   50% {
+     height: 100%;
+   }
+ }
